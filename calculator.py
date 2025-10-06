@@ -3,7 +3,7 @@ import re
 
 root = Tk()
 root.title("Calculator App")
-root.geometry("490x550")
+root.geometry("490x570")
 root.resizable(False, False)
 
 equation = StringVar()
@@ -116,5 +116,6 @@ button.bind("<Button-1>", calculator)
 button = Button(root, text="=", bg="orange", font=("Arial", 32), height=1, width=4, relief=RAISED, borderwidth=6)
 button.grid(row=5, column=3)
 button.bind("<Button-1>", calculator)
+
 
 root.mainloop()
