@@ -65,7 +65,7 @@ This makes the percentage operation work more like a **real calculator**.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/<your-username>/tkinter-calculator.git
+   git clone https://github.com/LakshyaSharma2005/tkinter-calculator.git
    ```
 2. Navigate into the folder:
 
