@@ -89,8 +89,8 @@ This makes the percentage operation work more like a **real calculator**.
 
 ## 🧑‍💻 Author
 
-**Your Name**
-🔗 GitHub: [@your-username](https://github.com/your-username)
+**Lakshya Sharma**
+🔗 GitHub: [@LakshyaSharma2005](https://github.com/LakshyaSharma2005)
 💬 Contributions, suggestions, and forks are welcome!
 
 ---
