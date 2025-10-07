@@ -14,8 +14,9 @@ def calculator(event):
     if text == "=":
         try:
             expression = equation.get().replace("x", "*")
-            expression = re.sub(r'(\d+)%(\d+)', r'(\1/100)*\2', expression)
-            expression = re.sub(r'(\d+)%', r'(\1/100)', expression)  
+            expression = re.sub(r'(\d+(?:\.\d+)?)%(\d+(?:\.\d+)?)', r'(\1/100)*\2', expression)
+            expression = re.sub(r'(\d+(?:\.\d+)?)%', r'(\1/100)', expression)
+
 
             result = str(eval(expression))
             equation.set(result)
@@ -116,6 +117,5 @@ button.bind("<Button-1>", calculator)
 button = Button(root, text="=", bg="orange", font=("Arial", 32), height=1, width=4, relief=RAISED, borderwidth=6)
 button.grid(row=5, column=3)
 button.bind("<Button-1>", calculator)
-
 
 root.mainloop()
