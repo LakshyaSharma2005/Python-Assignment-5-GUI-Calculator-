@@ -23,7 +23,7 @@ def calculator(event):
         except:
             equation.set("Error")
 
-    elif text == "C":
+    elif text == "AC":
         equation.set("")
     elif text == "del":
         current = equation.get()
@@ -38,7 +38,7 @@ entry.grid(row=0, column=0, rowspan=1, columnspan=4, pady=10)
 entry.config(state="readonly")
 
 
-button = Button(root, text="C", font=("Arial", 32), height=1, width=4, relief=RAISED, borderwidth=6, bg="orange")
+button = Button(root, text="AC", font=("Arial", 32), height=1, width=4, relief=RAISED, borderwidth=6, bg="orange")
 button.grid(row=1, column=0)
 button.bind("<Button-1>", calculator)
 
